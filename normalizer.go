@@ -5,15 +5,15 @@ import (
 	"strings"
 )
 
-// Normailier hanldes phone numbder normalization
+// Normalizer hanldes phone numbder normalization
 type Normalizer struct {
 	countries      []Country
 	defaultCountry *Country
 	codeMap        map[string]*Country
 }
 
-// NewNormailizer creatres a new phone number normalizer
-func NewNormlizer(defaultCountryA2 string) *Normalizer {
+// NewNormalizer creatres a new phone number normalizer
+func NewNormalizer(defaultCountryA2 string) *Normalizer {
 	var n = Normalizer{
 		countries: getCountries(),
 		codeMap:   make(map[string]*Country),
@@ -56,7 +56,7 @@ func (n *Normalizer) Normalize(phone string) (string, error) {
 		return fmt.Sprintf("+%s", phone), nil
 	}
 
-	phone = strings.TrimLeft(phone, "") // removes leading zeros in local numbers
+	phone = strings.TrimLeft(phone, "0") // removes leading zeros in local numbers
 
 	defaultCode := splitDialingCodes(n.defaultCountry.DialingCode)[0]
 
