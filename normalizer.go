@@ -5,6 +5,11 @@ import (
 	"strings"
 )
 
+const (
+	MinimumLocalDigitsLength int = 7
+	MaximumLocalDigitsLength int = 12
+)
+
 // Normalizer hanldes phone numbder normalization
 type Normalizer struct {
 	countries      []Country
@@ -38,12 +43,12 @@ func NewNormalizer(defaultCountryA2 string) *Normalizer {
 // Normalize adds the country code prefix to a phone number if missing
 func (n *Normalizer) Normalize(phone string) (string, error) {
 	if n.defaultCountry == nil {
-		return "", ErrDefaultCountryNotFound
+		return phone, ErrDefaultCountryNotFound
 	}
 
 	phone = cleanPhone(phone)
 
-	if phone == "" {
+	if phone == "" || len(phone) < MinimumLocalDigitsLength {
 		return "", ErrInvalidPhoneNumber
 	}
 
@@ -77,12 +82,12 @@ func (n *Normalizer) NormalizeBulk(phones []string) ([]string, []error) {
 
 // hasCountryCode checks if a phone number already starts with a valid country code
 func (n *Normalizer) hasCountryCode(phone string) bool {
-
+	cleanPhone := strings.TrimLeft(phone, "0")
 	for i := 1; i <= 4 && i <= len(phone); i++ {
-		prefix := phone[:i]
+		prefix := cleanPhone[:i]
 
-		if _, exists := n.codeMap[prefix]; exists {
-			return true
+		if country, exists := n.codeMap[prefix]; exists {
+			return country.A2 == n.defaultCountry.A2
 		}
 	}
 
