@@ -34,7 +34,7 @@ func (n *Normalizer) GetCountryByCode(code string) *Country {
 func (n *Normalizer) ValidatePhoneNumber(phone, countryA2 string) error {
 	country := n.GetCountryByA2(countryA2)
 	if country == nil {
-		return fmt.Errorf("%w: country: ", ErrUnknownCountry, countryA2)
+		return fmt.Errorf("%w: country: %s ", ErrUnknownCountry, countryA2)
 	}
 
 	cleanPhone := cleanPhone(phone)
@@ -46,5 +46,5 @@ func (n *Normalizer) ValidatePhoneNumber(phone, countryA2 string) error {
 		}
 	}
 
-	return fmt.Errorf("%w: country name: %s", country.Name)
+	return fmt.Errorf("%w: country name: %s", ErrPhoneNumberAndCountryCodeMismatch, country.Name)
 }

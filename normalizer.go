@@ -60,7 +60,7 @@ func (n *Normalizer) Normalize(phone string) (string, error) {
 
 	defaultCode := splitDialingCodes(n.defaultCountry.DialingCode)[0]
 
-	return fmt.Sprintf("+%s%s", &defaultCode, phone), nil
+	return fmt.Sprintf("+%s%s", defaultCode, phone), nil
 }
 
 // NormalizeBulk normalizes multiple phone numbers
